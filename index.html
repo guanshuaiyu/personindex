@@ -38,7 +38,7 @@
 <div id="home" class="header">
     <div class="container biaonn">
         <div class="nav-icon">
-            <a href="#" class="right_bt" id="activator"><span> </span> </a>
+            <a href="javascript:;" class="right_bt" id="activator"><span> </span> </a>
         </div>
         <div class="box" id="box">
             <div class="box_content">
@@ -76,28 +76,29 @@
                     $(this).toggleClass("active").next().slideToggle("slow");
                     return false;
                 });
-
             });
         </script>
         <!-- banner-info -->
         <div class="banner-info text-center">
-            <img src="images/pic.png" class="img-responsive"style="width: 414px;height:396px;" alt=""/>
+            <img src="images/pic.png" class="img-responsive"style="width: 30%;height:30%" alt=""/>
             <h1>关帅宇</h1>
-            <p style="color: #02D7FD">喜欢编写代码,设计页面</p>
+            <p style="color: #02D7FD">前端工程师</p>
             <ul>
-                <li><a href="#">联系我</a></li>
-                <li><a href="#">关于我</a></li>
+                <li><a href="javascript:;">联系我</a></li>
+                <li><a href="javascript:;">关于我</a></li>
             </ul>
         </div>
         <!-- banner-info -->
     </div>
 </div>
 <!-- /header -->
-<div id="about" class="about">
+<div id="about" class="about" style="overflow: hidden;position: relative" >
+    <div class="sanweilunbo" style="position: absolute;top:0;left:0;"></div>
+
     <div class="container">
         <!-- head-section -->
-        <div class="head-section text-center">
-            <h2>关于我</h2>
+        <div class="head-section text-center" style="margin-top:150px;position: relative;z-index: 10;">
+            <h2 style="color:white;">关于我</h2>
             <span></span>
         </div>
         <div class="about-grids">
@@ -111,10 +112,11 @@
                     年轻也许意味着欠缺经验，但是年轻也意味着热情和活力，我自信能凭自己的能力和学识在毕业以后的工作和生活中克服各种困难，不断实现自我的人生价值和追求的目标。</p>
             </div>
             <div class="col-md-6 about-right-grid">
-                <a class="popup-with-zoom-anim" href="#small-dialog"><img src="images/14.jpg" style="width: 463px;height: 345px;" title="name"/></a>
+                <a class="popup-with-zoom-anim" href="#small-dialog"><img src="images/14.jpg" style="width: 100%;height: 100%;"/></a>
             </div>
         </div>
     </div>
+
 </div>
 <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
 <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
@@ -146,63 +148,63 @@
     <div class="service-grids text-center">
         <div class="container">
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="设置">
                     <img src="./images/icon4.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>设置</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="安全">
                     <img src="./images/icon3.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>安全</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="软件商店">
                     <img src="./images/icon9.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>软件商店</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="地图">
                     <img src="./images/icon5.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>地图</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="指南针">
                     <img src="./images/icon1.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>指南针</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="计算器">
                     <img src="./images/icon8.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>计算器</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid">
+                <div class="service-grid" title="手电筒">
                     <img src="./images/icon6.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>手电筒</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="相机">
                     <img src="./images/tubiao1.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>相机</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="service-grid t-service-grid">
+                <div class="service-grid t-service-grid" title="软件">
                     <img src="./images/icon7.png" style="width: 200px;height: 200px;">
                     <h3>扁平图标</h3>
                     <p>软件</p>
@@ -221,7 +223,7 @@
         </div>
         <div class="portfolio-grids">
             <div class="portfolio-grid about-grid">
-                <a href="images/29.jpg" title="name" rel="title2">
+                <a href="images/29.jpg" title="百度" rel="title2">
                     <div class="view view-first">
                         <img src="images/29.jpg" class="img-responsive" alt=""/>
                         <div class="mask">
@@ -233,7 +235,7 @@
                 </a>
             </div>
         <div class="portfolio-grid about-grid">
-            <a href="images/28.jpg" title="name" rel="title2">
+            <a href="images/28.jpg" title="音乐播放器" rel="title2">
                 <div class="view view-first">
                     <img src="images/28.jpg" class="img-responsive" alt=""/>
                     <div class="mask">
@@ -245,7 +247,7 @@
             </a>
         </div>
     <div class="portfolio-grid about-grid">
-        <a href="images/19.jpg" title="name" rel="title2">
+        <a href="images/19.jpg" title="翡丽山庄" rel="title2">
             <div class="view view-first">
                 <img src="images/19.jpg" class="img-responsive" alt=""/>
                 <div class="mask">
@@ -257,7 +259,7 @@
         </a>
     </div>
 <div class="portfolio-grid about-grid">
-    <a href="images/12.jpg" title="name" rel="title2">
+    <a href="images/12.jpg" title="大牌三国" rel="title2">
         <div class="view view-first">
             <img src="images/12.jpg" class="img-responsive" alt=""/>
             <div class="mask">
@@ -269,7 +271,7 @@
     </a>
 </div>
 <div class="portfolio-grid about-grid">
-    <a href="images/15.jpg" title="name" rel="title2">
+    <a href="images/15.jpg" title="麦克风" rel="title2">
         <div class="view view-first">
             <img src="images/15.jpg" class="img-responsive" alt=""/>
             <div class="mask">
@@ -281,7 +283,7 @@
     </a>
 </div>
 <div class="portfolio-grid about-grid">
-    <a href="images/14.jpg" title="name" rel="title2">
+    <a href="images/14.jpg" title="小龙" rel="title2">
         <div class="view view-first">
             <img src="images/14.jpg" class="img-responsive" alt=""/>
             <div class="mask">
@@ -293,7 +295,7 @@
     </a>
 </div>
 <div class="portfolio-grid about-grid">
-    <a href="images/26.jpg" title="name" rel="title2">
+    <a href="images/26.jpg" title="音乐播放器" rel="title2">
         <div class="view view-first">
             <img src="images/26.jpg" class="img-responsive" alt=""/>
             <div class="mask">
@@ -305,7 +307,7 @@
     </a>
 </div>
 <div class="portfolio-grid about-grid">
-    <a href="images/31.jpg" title="name" rel="title2">
+    <a href="images/31.jpg" title="火影忍者" rel="title2">
         <div class="view view-first">
             <img src="images/31.jpg" class="img-responsive" alt=""/>
             <div class="mask">
@@ -329,7 +331,7 @@
         <div class="blog-articals">
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="single.html"><img src="images/github.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/github/"><img src="images/github.png" style="width:100%;height: 100%;" title="GitHub"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/github/">网站类</a></h3>
@@ -341,7 +343,7 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="#"><img src="images/gobang.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/gobang/"><img src="images/gobang.png" style="width:100%;height: 100%;" title="五子棋"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/gobang/">游戏类</a></h3>
@@ -353,7 +355,7 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="#"><img src="images/ty.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/Typinggame/"><img src="images/ty.png" style="width:100%;height: 100%;" title="打字游戏"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/Typinggame/">游戏类</a></h3>
@@ -365,19 +367,19 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="#"><img src="images/pk.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/poker/"><img src="images/pk.png" style="width:100%;height: 100%;" title="扑克"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/poker/">游戏类</a></h3>
                     <span>15年6月 | <a href="http://guanshuaiyu.github.io/poker/">扑克</a></span>
-                    <p>这是我为了纪念火影忍者,特地编写出来</p>
+                    <p>这是我为了纪念火影忍者编写出来的</p>
                     <a class="more-btn" href="http://guanshuaiyu.github.io/poker/">点击欣赏</a>
                     <div class="clearfix"></div>
                 </div>
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="single.html"><img src="images/yt.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://yutaidichan.duapp.com/"><img src="images/yt.png" style="width:100%;height: 100%;" title="宇泰地产"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://yutaidichan.duapp.com/">网站</a></h3>
@@ -389,7 +391,7 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="#"><img src="images/tm.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/tmall/"><img src="images/tm.png" style="width:100%;height: 100%;" title="天猫商城"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/tmall/">天猫商城</a></h3>
@@ -401,7 +403,7 @@
             </div>
             <div class="blog-artical" style="margin-top: -10px">
                 <div class="blog-artical-pic">
-                    <a href="#"><img src="images/shaolei.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/shaolei/"><img src="images/shaolei.png" style="width:100%;height: 100%;" title="扫雷"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/shaolei/">游戏类</a></h3>
@@ -413,7 +415,7 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="#"><img src="images/ty1.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/typinggame1/"><img src="images/ty1.png" style="width:100%;height: 100%;" title="打字游戏"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/typinggame1/">游戏类</a></h3>
@@ -425,7 +427,7 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="single.html"><img src="images/xiaomi.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/mi/"><img src="images/xiaomi.png" style="width:100%;height: 100%;" title="小米"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/mi/">网站类</a></h3>
@@ -437,19 +439,19 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="#"><img src="images/rl.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="javascript:;"><img src="images/rl.png" style="width:100%;height: 100%;" title="日历"/></a>
                 </div>
                 <div class="blog-artical-info">
-                    <h3><a href="#">应用类</a></h3>
-                    <span>15年5月 | <a href="#">日历</a></span>
+                    <h3><a href="javascript:;">应用类</a></h3>
+                    <span>15年5月 | <a href="javascript:;">日历</a></span>
                     <p>这是我做的iclude日历</p>
-                    <a class="more-btn" href="#">点击欣赏</a>
+                    <a class="more-btn" href="javascript:;">点击欣赏</a>
                     <div class="clearfix"></div>
                 </div>
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="single.html"><img src="images/lunbo.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/3dCarousel/"><img src="images/lunbo.png" style="width:100%;height: 100%;" title="3D轮播"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/3dCarousel/">欣赏类</a></h3>
@@ -461,13 +463,25 @@
             </div>
             <div class="blog-artical">
                 <div class="blog-artical-pic">
-                    <a href="single.html"><img src="images/jsq.png" style="width:100%;height: 100%;" title="name"/></a>
+                    <a href="http://guanshuaiyu.github.io/Calculator/"><img src="images/jsq.png" style="width:100%;height: 100%;" title="计算器"/></a>
                 </div>
                 <div class="blog-artical-info">
                     <h3><a href="http://guanshuaiyu.github.io/Calculator/">应用类</a></h3>
                     <span>15年9月 | <a href="http://guanshuaiyu.github.io/Calculator/">计算器</a></span>
                     <p>这个是我第一次制作有关数学知识的项目</p>
                     <a class="more-btn" href="http://guanshuaiyu.github.io/Calculator/">点击欣赏</a>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="blog-artical">
+                <div class="blog-artical-pic">
+                    <a href="http://guanshuaiyu.github.io/Snake/"><img src="images/snake.png" style="width:100%;height: 100%;" title="计算器"/></a>
+                </div>
+                <div class="blog-artical-info">
+                    <h3><a href="http://guanshuaiyu.github.io/Snake/">游戏类</a></h3>
+                    <span>15年9月 | <a href="http://guanshuaiyu.github.io/Snake/">贪吃蛇</a></span>
+                    <p>这是小时候爱玩的游戏</p>
+                    <a class="more-btn" href="http://guanshuaiyu.github.io/Snake/">点击欣赏</a>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -498,7 +512,7 @@
                 <div>
                     <p style="font-size: 16px;margin-left: 80px;line-height: 20px">我的邮箱</p>
                 </div>
-                <span> <i class="p-icon"><a href="1065984830@qq.com"></a> </i></span>
+                <span> <i class="p-icon"><a href="javascript:;"></a> </i></span>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -512,14 +526,6 @@
         <div class="footer-left">
             <p>我的GitHub <a href="https://github.com/guanshuaiyu/" target="_blank">guanshuaiyu</a></p>
         </div>
-        <!--<div class="footer-right">-->
-            <!--<ul>-->
-                <!--<li><a href="#"><span class="face"> </span></a></li>-->
-                <!--<li><a href="#"><span class="twit"> </span></a></li>-->
-                <!--<li><a href="#"><span class="dri"> </span></a></li>-->
-                <!--<li><a href="#"><span class="tech"> </span></a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
         <div class="clearfix"></div>
     </div>
     <script type="text/javascript">
@@ -528,7 +534,7 @@
 
         });
     </script>
-    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <a href="javascript:;" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
 </body>
 </html>

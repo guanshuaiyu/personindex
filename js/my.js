@@ -1,12 +1,21 @@
 $(function(){
-    var header = $("#home");
+    var header = $(".sanweilunbo");
     header.css({
-        width:"100%", height: "900px"
+        width:"100%", height: "800px",overflow: "hidden"
+    })
+    $(window).resize(function(){
+        var  clientw = $(window).width();
+        console.log(clientw);
+        if(clientw<1400){
+            header.css({diaplay:"none"})
+        }else {
+            header.css({diaplay:"block"})
+        }
     })
     var num=40;
     var arr=[];
     for(var i=0;i<num;i++) {
-        var a=900-(900/num)*(i+1);
+        var a=800-(800/num)*(i+1);
         var scene = $("<div>");
         scene.css({
             width: "100%",
@@ -39,14 +48,14 @@ $(function(){
                     height: "100%",
                     transform: "rotateY(-90deg)",
                     transformOrigin: "left",
-                    background: "url(images/1.jpg) no-repeat 0 "+(-i*900/num)+"px"
+                    background: "url(images/1.jpg) no-repeat 0 "+(-i*800/num)+"px"
                 })
             } else if (j == 2) {
                 panel.css({
                     width: "100%",
                     height: "100%",
                     transform: "rotateY(180deg)",
-                    background: "url(images/2.jpg) no-repeat 0 "+(-i*900/num)+"px"
+                    background: "url(images/2.jpg) no-repeat 0 "+(-i*800/num)+"px"
                 })
             } else if (j == 3) {
                 panel.css({
@@ -55,7 +64,7 @@ $(function(){
                     //left: "100px",
                     transform: "rotateY(90deg)",
                     transformOrigin: "right",
-                    background: "url(images/3.jpg) no-repeat 0 "+(-i*900/num)+"px"
+                    background: "url(images/3.jpg) no-repeat 0 "+(-i*800/num)+"px"
                 })
             } else if (j == 4) {
                 panel.css({
@@ -70,7 +79,7 @@ $(function(){
                     width: "100%",
                     height: "100%",
                     transform: "translateZ(1580px)",
-                    background: "url(images/4.jpg) no-repeat 0 "+(-i*900/num)+"px"
+                    background: "url(images/4.jpg) no-repeat 0 "+(-i*800/num)+"px"
                 })
             }
         }
