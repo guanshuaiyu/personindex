@@ -24,6 +24,7 @@ $(function(){
             perspectiveOrigin:"center" +a+"px"
         }).appendTo(header);
         var box = $("<div>");
+        box.addClass("sanwei");
         box.css({
             width: "100%", height: "100%",
             position: "relative",

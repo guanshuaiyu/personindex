@@ -174,7 +174,7 @@ a.boxclose{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9c950', endColorstr='#74a89b',GradientType=1 );
 }
 .banner-info img{
-	margin-bottom:0.7em;
+	margin:0 34%  0.7em ;
 	display:inline-block;
 }
 .img-circle {
@@ -189,7 +189,8 @@ a.boxclose{
 }
 .head-section h2{
 	font-weight: 900;
-	color: #595959;
+	/*color: #595959;*/
+    color: white;
 	font-size: 2.3em;
 	text-transform: uppercase;
 	margin: 0;
@@ -253,13 +254,13 @@ a.boxclose{
 	background:url(../images/services-icons.png) no-repeat 0px 0px;
 }
 .service-grid h3{
-	color:#878a8e;
+	color:#EE7018;
 	font-weight:700;
 	margin:0;
 	padding:0.5em 0;
 }
 .service-grid p{
-	color:#878a8e;
+	color:#EE7018;
 	font-weight:400;
 	font-size:1em;
 	text-transform:uppercase;
@@ -515,6 +516,7 @@ p.more-articals a:hover{
 .cycle span{
 	width:284px;
 	height:284px;
+	margin: auto auto;
 	display:inline-block;
 	background:url(../images/cycle.png) no-repeat 0px 0px;
 }
@@ -527,7 +529,8 @@ p.more-articals a:hover{
 .total-project {
 	position: absolute;
 	top: -46%;
-	left: 44%;
+	left: 50%;
+    margin-left:-58px;
 	text-align: center;
 }
 .project-grid p{
@@ -571,7 +574,7 @@ p.more-articals a:hover{
 .clientsgrid div{
 	position: absolute;
 	left: -100px;
-	top: 52px;
+	top: 100px;
 }
 .clientsgrid span i.p-icon{
 	background-position: -43px 0px;
@@ -580,12 +583,13 @@ p.more-articals a:hover{
 .people-grid div{
 	position: absolute;
 	left: 25px;
-	top: 52px;
+	top: 100px;
 }
 .people-grid span i.p-icon{
 	background-position: -87px 0px;
 }
 .project-grids{
+	width:100%;
 	position: relative;
 }
 .catch-on{
@@ -889,12 +893,39 @@ p.comment-form-author {
 a.boxclose {
 	right: 8.6em;
 }
+	.youxiang p{
+		left: 50px;
+	}
+    .head-section h2 {
+        color: white;
+    }
+    .sanweilunbo{
+        display: block;
+    }
 }
 @media(max-width:1024px){
 a.boxclose {
 	right: 4.5em;
 	top: 3.5em;
 }
+    .about-right-grid img {
+        display: none;
+    }
+    .head-section h2 {
+        color: black;
+    }
+    .sanweilunbo{
+        display: none;
+    }
+    .about-left-grid p {
+        color: black;
+    }
+    .about-left-grid span {
+        color: black;
+    }
+    .about-left-grid h3 {
+        color: black;
+    }
 .banner-info img {
 	width: 30%;
 }
@@ -920,7 +951,7 @@ a.boxclose {
 	font-size: 0.85em;
 }
 .total-project {
-	left: 42%;
+	/*left: 42%;*/
 }
 .single_header {
 	min-height: 160px;
@@ -966,7 +997,7 @@ p.more-articals {
 	margin-top: 0.5em;
 }
 .total-project {
-	left: 42%;
+	/*left: 50%;*/
 	top: -37%;
 }
 .clientsgrid {
@@ -1044,6 +1075,9 @@ a.boxclose {
 }
 }
 @media(max-width:640px){
+	.youxiang p{
+		left: 0px;
+	}
 .nav-icon a span {
 	margin-top: 1em;
 }	
